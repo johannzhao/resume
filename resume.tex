@@ -7,7 +7,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -26,8 +26,8 @@
 
 % personal data
 \name{Jason}{Huang}
-% \title{Resumé}                               % optional, remove / comment the line if not wanted
-\address{4301 Romfield Cres.}{Mississauga ON}{Canada L5M 4L4}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{4301 Romfield Cres}{L5M 4L4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 %\phone[mobile]{+1~(647)~631~6610}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \phone[fixed]{+1~(416)~499~8887}
 %\phone[fax]{+3~(456)~789~012}
@@ -39,7 +39,7 @@
 %\social[gitlab]{jhthenerd}                              % optional, remove / comment the line if not wanted
 %\extrainfo{Gitlab: jhthenerd}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-% \quote{Life is the ultimate optimization problem}                                 % optional, remove / comment the line if not wanted
+\quote{Life is the ultimate optimization problem}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -55,26 +55,11 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-
-% %-----       letter       ---------------------------------------------------------
-% % recipient data
-% \recipient{Company Recruitment Team}{Company, Inc.\\123 somestreet\\some city}
-% \date{\today}
-% \opening{Dear Sir or Madam,}
-% \closing{Yours faithfully,}
-% % \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-% \makelettertitle
-
-% This is the body of the cover letter
-
-% \makeletterclosing
-% \clearpage
-
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Education}
-\cventry{2017--Present}{High School}{John Fraser Secondary School (JFSS)}{Mississauga}{\textit{94\%}}{Grade 11}  % arguments 3 to 6 can be left empty
+\cventry{2017--Present}{High School}{John Fraser Secondary School}{Mississauga}{\textit{94\%}}{}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 %\section{Master thesis}
@@ -82,39 +67,59 @@
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
-\subsection{Clubs}
-\cventry{2018--Present}{Executive}{Computer Science Club}{JFSS}{}{
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2017--2019}{Volunteer}{Central Library}{Mississauga}{}{Computer Buddies program member, general volunteer.% \newline{}%
+%Achievements:%
+	\begin{itemize}
+		\item Communicate and teach older adults basic computer skills
+		\item Work with clients to solve unique problems
+		\item Maintain and help improve the experience for library patrons
+	\end{itemize}
+}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Clubs}
+\cventry{2018--Present}{Executive}{Computer Science Club}{John Fraser SS}{}{
 	\begin{itemize}
 		\item Taught other students advanced programming concepts
 		\item Worked with other executives to promote computer science education
-		\item Helped to plan and run a hackathon with a team of 6 in a span of 2 months
+		\item Helped to plan and run a hackathon in 2 months with minimal preparation
 	\end{itemize}
 }
-\cventry{2017--Present}{Co-founder}{3D Printing Club}{JFSS}{}{
+\cventry{2017--Present}{Co-founder}{3D Printing Club}{John Fraser SS}{}{
 	\begin{itemize}
 		\item Primary maintainer of 3D printers and related software
 		\item Work within the school to promote and educate peers about 3D printing technology
 		\item Collaborate with teachers to introduce 3D printing into the curriculum
 	\end{itemize}
 }
-\cventry{2017--Present}{Lead Engineer}{VEX Robotics}{JFSS}{}{
+\cventry{2017--Present}{Lead Engineer}{VEX Robotics}{John Fraser SS}{}{
 	\begin{itemize}
-		\item Led a primary team of 10 to build, design, and maintain robot hardware
-		\item Collaborated in an executive team of 4 to recruit and vet 10 new members
-		\item Assisted and taught secondary team of 10 various engineering techniques
-		\item Competed at a provincial level among world-class teams, and made it to eliminations
+		\item Built, designed, and maintained robot hardware
+		\item Collaborated with rest of team to resolve issues
+		\item Worked with other high-ranking team members to recruit and vet new members
 	\end{itemize}
 }
 
+\section{Honors \& Awards}
+\cvitemwithcomment{2019}{Achievement in <Grade 10 Technological Design>}{John Fraser SS}
+\cvitemwithcomment{2019}{Canadian Intermediate Math Contest (CIMC) School Champion}{John Fraser SS}
+\cvitemwithcomment{2018}{Best Highschool Hack}{Redbull AdrenaLAN 2018}
+%\cvitemwithcomment{2018}{Achievement in <Grade 9 Science - Advanced Placement>}{John Fraser SS}
+
+%\newpage
+
+\section{Scores}
+%\cvitemwithcomment{2019}{SAT Physics (770)}{The College Board}
+\cvitemwithcomment{2019}{AP Physics A (5)}{The College Board}
+\cvitemwithcomment{2019}{AP Computer Science A (5)}{The College Board}
+\cvitemwithcomment{2018}{SAT (1530)}{The College Board}
+
 \section{Projects}
-\cventry{2020--Present}{Fraser Votes}{}{JFSS}{}{
-	\url{https://github.com/Fraser-Votes/}
-	\begin{itemize}
-		\item An online voting tool that utilizes asymmetric, end-to-end encryption to allow for secure, anonymous voting
-		\item Built using Gatsby and Firebase
-	\end{itemize}
-}
-\cventry{2019--2019}{Dr. Dash}{}{University of Waterloo (Hack the North)}{}{
+\cventry{2019--2019}{Dr. Dash}{}{Hack the North}{}{
 	\url{https://github.com/davidli3100/HTN2019}
 	\begin{itemize}
 		\item A chatbot that helps patients submit pertinent information to doctors before their appointment, that interfaces with voice assistants, Facebook Messenger, and telephony
@@ -126,27 +131,23 @@
 	\begin{itemize}
 		\item An open-source GTD task manager built out of personal need
 		\item Originally built in Electron and React, but pivoted to a CLI app written in Go
-		\item Experimented with various features of Go
-		\item Currently exploring Rust for an ongoing program rewrite
+		\item Currently being ported to Rust
 	\end{itemize}
 }
-\cventry{2019--On Hold}{PinBoard}{}{JFSS}{}{
-	\url{https://github.com/davidli3100/FraserConnect}
+\cventry{2019--On Hold}{PinBoard}{}{John Fraser SS}{}{
+%	\url{}
 	\begin{itemize}
-		\item An interface allowing students to receive announcements, event updates, and polls from school
-		\item Collaborated in an agile environment to quickly innovate, prototype, and release features
-		\item Pitched solution and prototype to stakeholders
+		\item An interface allowing students to receive announcements, event updates, and polls from JFSS
 		\item Developed using React Native and Firebase
 	\end{itemize}
 }
-% \cventry{2019--2020}{FraserHacks 2019 Website}{}{JFSS}{}{
-% 	\url{https://github.com/FraserHacks/FraserHacks-Website}
-% 	\begin{itemize}
-% 		\item A website promoting FraserHacks 2019
-% 		\item Built in a team of 3
-% 		\item Developed in pure HTML, CSS, JS
-% 	\end{itemize}
-% }
+\cventry{2019--2020}{FraserHacks 2019 Website}{}{John Fraser SS}{}{
+	\url{https://github.com/FraserHacks/FraserHacks-Website}
+	\begin{itemize}
+		\item A website promoting FraserHacks 2019
+		\item Developed in pure HTML, CSS, JS
+	\end{itemize}
+}
 
 \section{Skills}
 \cvitem{Operating Systems}{Windows, Linux (Debian-based, RPM-based)}
@@ -156,38 +157,9 @@
 \cvitem{Strong Subjects}{Computer Science, Physics, Math}
 
 \section{Interests}
-\cvitem{CTFs}{Computer security challenges where competitors use various red-team techniques to gain access to a flag (usually a specific string), have done PicoCTF, Google CTF, HackTheBox}
+\cvitem{CTFs}{Competitive infosec challenges where competitors use various red-team techniques to gain access to a flag (usually a specific string)}
 %\cvitem{Photography}{I do casual photography for my family and occasionally post photos online}
 \cvitem{Linux}{I use Linux on my daily driver laptop, and enjoy using and modifying the system in my free time}
-
-\section{Honors \& Awards}
-% \cvitemwithcomment{2019}{Achievement in <Grade 10 Technological Design>}{JFSS}
-\cvitemwithcomment{2019}{Canadian Intermediate Math Contest (CIMC) School Champion}{JFSS}
-\cvitemwithcomment{2018}{Best Highschool Hack}{Redbull AdrenaLAN 2018}
-%\cvitemwithcomment{2018}{Achievement in <Grade 9 Science - Advanced Placement>}{John Fraser SS}
-
-\section{Scores}
-\cvitemwithcomment{2019}{SAT Physics (770)}{The College Board}
-\cvitemwithcomment{2019}{AP Physics A (5)}{The College Board}
-% \cvitemwithcomment{2019}{Grade 11 Computer Science (100\%)}{JFSS}
-\cvitemwithcomment{2019}{AP Computer Science A (5)}{The College Board}
-\cvitemwithcomment{2018}{SAT (1530)}{The College Board}
-
-\section{Volunteer Experience}
-%\subsection{Vocational}
-\cventry{2017--2019}{Volunteer}{Central Library}{Mississauga}{}{Computer Buddies program member, general volunteer.% \newline{}%
-%Achievements:%
-	\begin{itemize}
-		\item Communicated and taught older adults basic computer skills
-		\item Worked with clients to solve unique problems
-		\item Maintained and helped improve the experience for library patrons
-		\item Helped develop future curriculum for program
-		\item Worked as a team player with administration and other managers to schedule and cover time slots
-	\end{itemize}
-}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-%\subsection{Miscellaneous}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
@@ -199,8 +171,8 @@
 %\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
 %\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
-% \section{References}
-% References available upon request
+\section{References}
+References available upon request
 %\begin{cvcolumns}
 %  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
 %  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
@@ -222,6 +194,28 @@
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
