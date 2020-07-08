@@ -10,7 +10,7 @@
 \documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -28,13 +28,13 @@
 \name{Jason}{Huang}
 % \title{Resumé}                               % optional, remove / comment the line if not wanted
 \address{4301 Romfield Cres.}{Mississauga ON}{Canada L5M 4L4}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+1~(647)~631~6610}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{+1~(647)~631~6610}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \phone[fixed]{+1~(416)~499~8887}
 %\phone[fax]{+3~(456)~789~012}
 \email{jasonhuang@disroot.org}                               % optional, remove / comment the line if not wanted
 \homepage{jasonhuang.netlify.com}                         % optional, remove / comment the line if not wanted
 %\social[linkedin]{jasonhuang03}                        % optional, remove / comment the line if not wanted
-%\social[twitter]{jhthenerd}                             % optional, remove / comment the line if not wanted
+\social[twitter]{jhthenerd}                             % optional, remove / comment the line if not wanted
 \social[github]{jhthenerd}                              % optional, remove / comment the line if not wanted
 %\social[gitlab]{jhthenerd}                              % optional, remove / comment the line if not wanted
 %\extrainfo{Gitlab: jhthenerd}                 % optional, remove / comment the line if not wanted
@@ -74,7 +74,7 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2017--Present}{High School}{John Fraser Secondary School (JFSS)}{Mississauga}{\textit{94\%}}{Grade 11}  % arguments 3 to 6 can be left empty
+\cventry{2017--Present}{High School}{John Fraser Secondary School (JFSS)}{Mississauga}{\textit{93\%}}{Grade 11}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 %\section{Master thesis}
@@ -106,8 +106,30 @@
 	\end{itemize}
 }
 
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2020--Present}{Software Developer}{TakingITGlobal}{Mississauga}{}{Full Stack Developer for #RisingYouth Site% \newline{}%
+%Achievements:%
+	\begin{itemize}
+		\item Used cutting-edge tooling to improve site performance as measured by Lighthouse V6, from 8 to 70+
+		\item Built a custom API that interfaces with the site's form, and pipes results to both email and Airtable
+		\item Connected site to a CMS that allows for easy updating of site contents
+		\item Worked in a fast-moving environment to quickly iterate and develop the site 
+	\end{itemize}
+}
+\cventry{2017--2019}{Volunteer}{Central Library}{Mississauga}{}{Computer Buddies program member, general volunteer.% \newline{}%
+%Achievements:%
+	\begin{itemize}
+		\item Communicated and taught older adults basic computer skills
+		\item Worked with clients to solve unique problems
+		\item Maintained and helped improve the experience for library patrons
+		\item Helped develop future curriculum for program
+		\item Worked as a team player with administration and other managers to schedule and cover time slots
+	\end{itemize}
+}
+
 \section{Projects}
-\cventry{2020--Present}{Fraser Votes}{}{JFSS}{}{
+\cventry{2020--2020}{Fraser Votes}{}{JFSS}{}{
 	\url{https://github.com/Fraser-Votes/}
 	\begin{itemize}
 		\item An online voting tool that utilizes asymmetric, end-to-end encryption to allow for secure, anonymous voting
@@ -121,16 +143,16 @@
 		\item Built using Firebase and DialogFlow, with a Python backend
 	\end{itemize}
 }
-\cventry{2019--Present}{OpenDo}{}{Personal Project}{} {
-	\url{https://gitlab.com/jhthenerd/XXSUNSET_opendo-go}
+\cventry{2019--On Hold}{OpenDo}{}{Personal Project}{} {
+	% \url{https://gitlab.com/jhthenerd/XXSUNSET_opendo-go}
 	\begin{itemize}
 		\item An open-source GTD task manager built out of personal need
 		\item Originally built in Electron and React, but pivoted to a CLI app written in Go
 		\item Experimented with various features of Go
-		\item Currently exploring Rust for an ongoing program rewrite
+		\item Currently on hold due to other priorities
 	\end{itemize}
 }
-\cventry{2019--On Hold}{PinBoard}{}{JFSS}{}{
+\cventry{2019--2019}{PinBoard}{}{JFSS}{}{
 	\url{https://github.com/davidli3100/FraserConnect}
 	\begin{itemize}
 		\item An interface allowing students to receive announcements, event updates, and polls from school
@@ -157,14 +179,8 @@
 
 \section{Interests}
 \cvitem{CTFs}{Computer security challenges where competitors use various red-team techniques to gain access to a flag (usually a specific string), have done PicoCTF, Google CTF, HackTheBox}
-%\cvitem{Photography}{I do casual photography for my family and occasionally post photos online}
 \cvitem{Linux}{I use Linux on my daily driver laptop, and enjoy using and modifying the system in my free time}
-
-\section{Honors \& Awards}
-% \cvitemwithcomment{2019}{Achievement in <Grade 10 Technological Design>}{JFSS}
-\cvitemwithcomment{2019}{Canadian Intermediate Math Contest (CIMC) School Champion}{JFSS}
-\cvitemwithcomment{2018}{Best Highschool Hack}{Redbull AdrenaLAN 2018}
-%\cvitemwithcomment{2018}{Achievement in <Grade 9 Science - Advanced Placement>}{John Fraser SS}
+\cvitem{Homelab}{I'm in the process of building my family a custom NAS/Home Server from a decommissioned rackmount server, which will eventually run OpenMediaVault, hosting various Docker apps}
 
 \section{Scores}
 \cvitemwithcomment{2019}{SAT Physics (770)}{The College Board}
@@ -173,18 +189,12 @@
 \cvitemwithcomment{2019}{AP Computer Science A (5)}{The College Board}
 \cvitemwithcomment{2018}{SAT (1530)}{The College Board}
 
-\section{Volunteer Experience}
-%\subsection{Vocational}
-\cventry{2017--2019}{Volunteer}{Central Library}{Mississauga}{}{Computer Buddies program member, general volunteer.% \newline{}%
-%Achievements:%
-	\begin{itemize}
-		\item Communicated and taught older adults basic computer skills
-		\item Worked with clients to solve unique problems
-		\item Maintained and helped improve the experience for library patrons
-		\item Helped develop future curriculum for program
-		\item Worked as a team player with administration and other managers to schedule and cover time slots
-	\end{itemize}
-}
+\section{Honors \& Awards}
+% \cvitemwithcomment{2019}{Achievement in <Grade 10 Technological Design>}{JFSS}
+\cvitemwithcomment{2019}{Canadian Intermediate Math Contest (CIMC) School Champion}{JFSS}
+\cvitemwithcomment{2018}{Best Highschool Hack}{Redbull AdrenaLAN 2018}
+%\cvitemwithcomment{2018}{Achievement in <Grade 9 Science - Advanced Placement>}{John Fraser SS}
+
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
 %\subsection{Miscellaneous}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
